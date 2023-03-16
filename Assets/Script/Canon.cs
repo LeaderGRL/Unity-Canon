@@ -32,7 +32,7 @@ public class Canon : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
-            canon.transform.rotation = new Quaternion(canon.transform.rotation.x + normalizedMousePosition, canon.transform.rotation.y, canon.transform.rotation.z, canon.transform.rotation.w);
+            canonPivot.transform.rotation = new Quaternion(canonPivot.transform.rotation.x + normalizedMousePosition, canonPivot.transform.rotation.y, canonPivot.transform.rotation.z, canonPivot.transform.rotation.w);
         }
 
         if (Input.GetMouseButtonUp(0))
