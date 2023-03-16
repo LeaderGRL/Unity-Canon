@@ -676,6 +676,7 @@ GameObject:
   - component: {fileID: 858630605}
   - component: {fileID: 858630607}
   - component: {fileID: 858630606}
+  - component: {fileID: 858630608}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -800,6 +801,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858630604}
   m_CullTransparentMesh: 1
+--- !u!114 &858630608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858630604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8908b7c4aecc4424eb5a769ed7f9fcfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 858630606}
 --- !u!1 &939373069
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,6 +827,7 @@ GameObject:
   - component: {fileID: 939373072}
   - component: {fileID: 939373071}
   - component: {fileID: 939373074}
+  - component: {fileID: 939373075}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -912,6 +927,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &939373075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939373069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466e1d2729bc62f459d33a8b7c917aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &957983336
 GameObject:
   m_ObjectHideFlags: 0
