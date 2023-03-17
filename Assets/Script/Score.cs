@@ -6,8 +6,7 @@ using UnityEngine;
 public class Score : MonoBehaviour
 {
     private float scorePoint = 0;
-    [SerializeField] private TextMeshProUGUI scoreText;
-  
+    public GameObject scoreText;
     
     // Start is called before the first frame update
     void Start()
@@ -18,14 +17,16 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = scorePoint.ToString();
+        GetComponent<TextMeshProUGUI>().text = scorePoint.ToString();
+
     }
 
     public void AddScore(float point)
     {
-        Debug.Log("point : " + point);
         scorePoint += point;
-        Debug.Log("scorePoint : " + scorePoint);
+        //scoreText.text = "a";
+        Debug.Log("scorePoint : " + scorePoint.ToString());
+        GetComponent<TextMeshProUGUI>().text = scorePoint.ToString();
     }
 
     public float GetScore()
